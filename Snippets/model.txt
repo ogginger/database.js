@@ -1,0 +1,24 @@
+//model.js: Data logic.
+
+define([
+        "jquery",
+        "underscore",
+        "backbone",
+        "Functions/log
+], function(
+        $,
+        _,
+        Backbone,
+        log
+) {
+        return new Backbone.Model.extend({
+                "initialize": function() {
+			log("model initialized successfully!");
+                },
+
+		defaults: function() {
+			return {};
+		}
+        });
+});
+

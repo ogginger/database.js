@@ -1,0 +1,20 @@
+//node_main.js: Main logic for Node application.
+/* This file depends on nodejs and the nodejs module requirejs. */
+
+var requirejs = require("requirejs");
+
+requirejs.config({
+        nodeRequire: require,
+        baseUrl: "./",
+        paths: {},
+        bundles: {},
+	shim: {}
+});
+
+requirejs([
+
+], function(
+
+) {
+	console.log("Main intialized successfully!");
+});

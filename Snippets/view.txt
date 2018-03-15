@@ -1,0 +1,19 @@
+//view.js: Visual logic.
+
+define([
+	"jquery",
+	"underscore",
+	"backbone",
+	"Functions/log
+], function(
+	$,
+	_,
+	Backbone,
+	log
+) {
+	return Backbone.View.extend({
+		"initialize": function() {
+			log("View initialized successfully!");
+		}
+	});
+});

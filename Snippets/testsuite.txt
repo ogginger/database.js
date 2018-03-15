@@ -1,0 +1,26 @@
+//testsuite.js: Testing Logic.
+
+define([
+  "TestSuite",
+  "Functions/log"
+], function(
+  TestSuite,
+  log
+) {
+  return TestSuite.extend({
+    "initialize": function() {
+      log("testsuite initialized successfully!");
+      var xTestSuite = this;
+      xTestSuite.set( "MethodUnderTest", "" );
+      
+      xTestSuite.add({
+        "Name": "",
+        "Input": "",
+        "Function": "",
+        "ExpectedOutput": ""
+      });
+      
+      xTestSuite.test();
+    }
+  });
+});

@@ -1,0 +1,14 @@
+//main.js: Main logic.
+
+require.config({
+	paths: {},
+	shim: {}
+});
+
+require([
+
+], function(
+
+) {
+	console.log("Main initialized successfully!");
+});
